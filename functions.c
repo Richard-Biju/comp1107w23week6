@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "helpers.h"
+#include "encode.h"
 #include <stdbool.h>
 
 float calculate_tax(float price, float tax_rate);
@@ -21,6 +22,8 @@ float user_price = get_float("what is the price of the item you want the tax cal
 float item_tax = calculate_tax(user_price, user_tax_rate);
 
 printf("the tax on this item would be $%f\n", item_tax);
+
+ceasar_shift("test", true, 4);
 
     return 0;
 }
